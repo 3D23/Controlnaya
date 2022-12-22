@@ -11,7 +11,7 @@ class Robot():
                 self.y -= 1
             elif i.lower() == 'e' and self.x != 100:
                 self.x += 1
-            elif i.lower() == 'w' and self.y != 0:
+            elif i.lower() == 'w' and self.x != 0:
                 self.x -= 1
         return [self.x, self.y]
 
