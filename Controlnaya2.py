@@ -19,6 +19,6 @@ class Robot():
                 self.x -= 1
         return [self.x, self.y]
 x = int(input('Введите начальное положение робота по координате x: '))
-y = int(input('Введите начальное значение робота по координате y: '))
+y = int(input('Введите начальное положение робота по координате y: '))
 robot = Robot(x, y)
 print(robot.move('wweEEESssNNNNNN'))
