@@ -1,6 +1,10 @@
 class Robot():
     def __init__(self, x, y):
+        while not(x >= 0 and x <= 100):
+            x = int(input('Введите другое значение x: '))
         self.x = x
+        while not(y >= 0 and y <= 100):
+            y = int(input('Введите другое значение y: '))
         self.y = y
 
     def move(self, s):
@@ -14,6 +18,7 @@ class Robot():
             elif i.lower() == 'w' and self.x != 0:
                 self.x -= 1
         return [self.x, self.y]
-
-robot = Robot(23, 76)
-print(robot.move('sssssweeeeeeewwwwwwNNNEEEEEEEEwwwwww'))
+x = int(input('Введите начальное положение робота по координате x: '))
+y = int(input('Введите начальное значение робота по координате y: '))
+robot = Robot(x, y)
+print(robot.move('wweEEESssNNNNNN'))
